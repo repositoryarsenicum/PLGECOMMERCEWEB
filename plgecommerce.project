@@ -1,0 +1,51 @@
+# PLGAGENDALIVE
+
+	+ Tecnologias
+
+		-- NodeJS (v12.16.1)
+		-- Angular CLI (v9.0.6)
+
+	+ Comandos
+
+		-- Inicialiar projeto (sem arquivos de teste)
+			ng new PLGCOMETRONIC --skipTests=true
+
+		-- Instalar dependências
+
+		-- Criar componentes
+
+			ng generate component component/header
+			ng generate component component/home
+			ng generate component component/footer
+			ng generate component component/cart
+			ng generate component component/checkout
+			ng generate component component/produto
+			ng generate component component/confirmacaocompra
+
+		-- Criar Service
+
+			ng generate service service/produto
+			ng generate service service/cart
+			ng generate service service/confirmacao-compra
+
+		-- Criar Classe
+
+			ng generate class model/produto --type=model
+			ng generate class model/cart --type=model
+
+		-- Criar Interface
+
+			ng generate interface model/produto.model
+			ng generate interface model/cart.model
+
+		-- Iniciar aplicação
+			ng serve --port 8080 -o
+
+	+ Versionamento
+
+		-- Criar base de versionamento (sobreescrever versionamento já existente)
+
+			git init
+			git remote add origin https://github.com/repositorythallium/PLGCOMETRONIC-WEB.git
+			git commit -a -m $'PLGECOMMERCEWEB-19122020212325 \n# Sobrescrevendo versão dos projeto'
+			git push -u origin master --force
